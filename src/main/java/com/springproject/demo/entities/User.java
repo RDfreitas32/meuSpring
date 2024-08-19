@@ -21,7 +21,7 @@ public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY) //o banco de dados usa um campo auto-incrementável para gerar o valor.
 	private Long id;
 	private String name;
 	private String email;
